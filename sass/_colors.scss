@@ -1,0 +1,84 @@
+$primary-color: #475AFF;
+$secondary-color: #000;
+$link-color: #5435E8;
+
+$opacity-color: rgba(84, 53, 232, .8);
+
+.header{
+    color: #fff;
+    .nav-link{
+        color: #fff;
+        &:hover{
+            opacity: .7;
+        }
+    }
+    
+}
+
+.section .title{
+    color: $secondary-color;
+}
+
+
+.button-link-dark{
+    color: $link-color;
+    border-color: $link-color;
+    background-color: transparent;
+
+    &:hover{
+        color: #fff;
+        background-color: $link-color;
+    }
+}
+
+
+.button-link-light{
+    color: #fff;
+    border: 2px solid#fff;
+    background-color: transparent;
+
+    &:hover{
+        color: $link-color;
+        background-color: #fff;
+    }
+}
+
+.btn.btn-primary{
+    background-color: $link-color;
+    color: #fff;
+    border-color: $link-color;
+
+    &:hover{
+        background-color: transparent;
+        color: $link-color;
+        border-color: $link-color;
+    }
+}
+
+.nav-categories .nav-link{
+    color: $secondary-color;
+    position: relative;
+    padding-bottom: .5rem;
+
+    &::before{
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 3px;
+        background-color: $link-color;
+        transition: all .4s;
+    }
+
+    &::before:hover{
+        width: 100%;
+    }
+
+    &:hover{
+        color: $link-color;
+    }
+}
+
+.footer{
+    background-color: $secondary-color;
+    color: #fff;
+}

@@ -9,6 +9,15 @@ $(document).ready(function() {
     }
 
     wSkills();
+    
+
+    $('.item-gallery').hover(function() {
+       $itemClass = $(this).attr('class');
+       $button = $($itemClass + ' .button-link');
+
+       $button.removeClass('button-link-dark');
+       
+    })
 
   
 

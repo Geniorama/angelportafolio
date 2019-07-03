@@ -19,10 +19,13 @@ $opacity-color: rgba(84, 53, 232, .8);
     color: $secondary-color;
 }
 
+.button-link:hover{
+    text-decoration: none;
+}
 
 .button-link-dark{
     color: $link-color;
-    border-color: $link-color;
+    border: 2px solid $link-color;
     background-color: transparent;
 
     &:hover{
@@ -59,6 +62,7 @@ $opacity-color: rgba(84, 53, 232, .8);
     color: $secondary-color;
     position: relative;
     padding-bottom: .5rem;
+    font-weight: bold;
 
     &::before{
         content: '';
@@ -67,13 +71,15 @@ $opacity-color: rgba(84, 53, 232, .8);
         height: 3px;
         background-color: $link-color;
         transition: all .4s;
+        bottom: 0;
+        left: 0;
     }
 
-    &::before:hover{
+    &:hover::before{
         width: 100%;
     }
 
-    &:hover{
+    &:hover, &.active{
         color: $link-color;
     }
 }

@@ -1,0 +1,25 @@
+[
+    {"nameProject"   : "Desarrollo sitio",
+        "nameClient"    : "UniverCity",
+        "dataCategory"  : "web-design",
+        "typeGallery"   : "typeUrl",
+        "urlImage"      : "img/pc-mockup.jpg",
+        "sourceImage"   : "https://univercity.com.co/"
+        },
+
+    {"nameProject"   : "Desarrollo sitio",
+        "nameClient"    : "UniverCity",
+        "dataCategory"  : "web-design",
+        "typeGallery"   : "typeUrl",
+        "urlImage"      : "img/pc-mockup.jpg",
+        "sourceImage"   : "https://univercity.com.co/"
+        },
+
+    {"nameProject"   : "Desarrollo sitio",
+        "nameClient"    : "UniverCity",
+        "dataCategory"  : "web-design",
+        "typeGallery"   : "typeUrl",
+        "urlImage"      : "img/pc-mockup.jpg",
+        "sourceImage"   : "https://univercity.com.co/"
+        },   
+]

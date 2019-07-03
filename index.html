@@ -12,24 +12,26 @@
     <script src="https://kit.fontawesome.com/ef5e146321.js"></script>
 </head>
 <body>
-    <header class="header">
-        <div class="container">
-            <div class="row justify-content-between">
-                <div class="col-6 col-md-3">
-                    <div class="brand-container">
-                        <h2>Angel Burgos</h2>
+    <div class="container-header position-relative">
+        <header class="header">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-6 col-md-3">
+                        <div class="brand-container">
+                            <h2>Angel Burgos</h2>
+                        </div>
                     </div>
-                </div>
-                <div class="col-6 col-md-1">
-                    <div class="toggle-button">
-                        <div class="line"></div>
-                        <div class="line"></div>
-                        <div class="line"></div>
+                    <div class="col-6 col-md-1">
+                        <div class="toggle-button">
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </header>
+        </header>
+    </div>
 
     <section id="intro">
             <div class="content">
@@ -192,10 +194,10 @@
                 </div>
                 <div class="col-12 text-center">
                     <ul class="nav nav-categories justify-content-center">
-                        <li class="nav-item"><a href="#" class="nav-link active">Todo</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Diseño</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Desarrollo nativo</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Desarrollo Wordpress</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link active" data-category="all-items">Todo</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link" data-category="web-design">Diseño</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link" data-category="web-developer">Desarrollo nativo</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link" data-category="wordpress">Desarrollo Wordpress</a></li>
                     </ul>
                 </div>
                 <div class="col-12">
@@ -203,38 +205,27 @@
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-12 col-md-4">
+            <div class="row container-gallery">
+                <!-- Item Gallery 
+                <div class="col-12 col-md-4 container-item-gallery" data-category="web-design">
                     <div class="item-gallery">
                         <img src="img/pc-mockup.jpg" alt="" class="img-fluid">
                         <div class="caption-gallery">
                             <div class="info-portfolio">
-                                <a href="#" class="button-link button-link-dark"><i class="fas fa-link"></i></a>
+                                <a href="#" class="button-link button-link-dark" target="_blank"><i class="fas fa-link"></i></a>
                                 <h5 class="work">WEB DEVELOPER</h5>
                                 <p class="customer">UniverCity</p>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="col-12 col-md-4">
-                    <div class="item-gallery">
-                        <img src="img/pc-mockup.jpg" alt="" class="img-fluid">
-                        <div class="caption-gallery">
-                            <div class="info-portfolio">
-                                <a href="#" class="button-link button-link-dark"><i class="fas fa-link"></i></a>
-                                <h5 class="work">WEB DEVELOPER</h5>
-                                <p class="customer">UniverCity</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                -->
             </div>
         </div>
     </section>
 
     
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
 </body>

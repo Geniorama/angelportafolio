@@ -19,8 +19,11 @@ $opacity-color: rgba(84, 53, 232, .8);
     color: $secondary-color;
 }
 
-.button-link:hover{
-    text-decoration: none;
+.button-link{
+    transition: all .3s;
+    &:hover{
+        text-decoration: none;
+    }
 }
 
 .button-link-dark{

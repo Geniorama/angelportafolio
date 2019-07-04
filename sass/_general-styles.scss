@@ -38,3 +38,17 @@ button{
     justify-content: center;
     border-radius: 50%;
 }
+
+.btn{
+    padding: 1rem 0;
+    border-radius: 0px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.form-control{
+    border: none;
+    border-bottom: 1px solid #959595;
+    border-radius: 0;
+}

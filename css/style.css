@@ -29,6 +29,7 @@ p {
 }
 .button-link:hover {
   text-decoration: none;
+  cursor: pointer;
 }
 
 .button-link-dark {
@@ -42,12 +43,12 @@ p {
 }
 
 .button-link-light {
-  color: #fff;
+  color: #fff !important;
   border: 2px solid #fff;
   background-color: transparent;
 }
 .button-link-light:hover {
-  color: #5435E8;
+  color: #5435E8 !important;
   background-color: #fff;
 }
 
@@ -83,6 +84,17 @@ p {
 }
 .nav-categories .nav-link:hover, .nav-categories .nav-link.active {
   color: #5435E8;
+}
+
+.info-contact .nav-link {
+  color: #707070;
+  transition: all 0.3s;
+}
+.info-contact .nav-link i {
+  color: #5435E8;
+}
+.info-contact .nav-link:hover {
+  opacity: 0.6;
 }
 
 .footer {
@@ -129,6 +141,20 @@ button {
   border-radius: 50%;
 }
 
+.btn {
+  padding: 1rem 0;
+  border-radius: 0px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.form-control {
+  border: none;
+  border-bottom: 1px solid #959595;
+  border-radius: 0;
+}
+
 .header {
   position: absolute;
   width: 100%;
@@ -172,16 +198,6 @@ button {
   top: 0;
   left: 0;
 }
-#intro::after {
-  content: "";
-  position: absolute;
-  width: 130%;
-  height: 130px;
-  background-color: #fff;
-  bottom: -60px;
-  left: -10%;
-  transform: rotate(-5deg);
-}
 #intro .content {
   display: flex;
   flex-direction: column;
@@ -215,12 +231,27 @@ button {
   justify-content: center;
 }
 
+.diagonal {
+  position: relative;
+  padding-bottom: 7rem;
+}
+.diagonal::after {
+  content: "";
+  position: absolute;
+  width: 130%;
+  height: 130px;
+  background-color: #fff;
+  bottom: -60px;
+  left: -10%;
+  transform: rotate(-5deg);
+}
+
 .skills .skill {
   padding: 1rem;
   color: #555555;
 }
 .skills .skill .percent {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: bold;
   margin: 0;
 }
@@ -297,6 +328,23 @@ button {
 .item-gallery:hover .button-link {
   color: #fff;
   border-color: #fff;
+}
+
+.owl-carousel .item {
+  padding: 0 3rem;
+}
+.owl-carousel .item .img-fluid {
+  filter: grayscale(100%);
+  transition: all 0.3s;
+}
+.owl-carousel .item .img-fluid:hover {
+  filter: grayscale(0%);
+}
+
+@media (min-width: 1366px) {
+  .diagonal::after {
+    transform: rotate(-3deg);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

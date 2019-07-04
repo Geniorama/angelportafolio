@@ -15,7 +15,7 @@ $(document).ready(function() {
 
                 cadena += '<div class="col-12 col-md-4 container-item-gallery" data-category='+ categoria +'>';
                 cadena += ' <div class="item-gallery">';
-                cadena += '<img src='+ recurso +' alt="" class="img-fluid">';
+                cadena += '<img src="img/portafolio/'+ recurso +'" alt="" class="img-fluid">';
                 cadena += '<div class="caption-gallery">';
                 cadena += '<div class="info-portfolio">';
                 cadena += '<a href='+ link +' class="button-link button-link-dark" target="_blank"><i class="fas fa-link"></i></a>';
@@ -31,7 +31,7 @@ $(document).ready(function() {
     }
     
     function traerDatos(){
-        console.log('dentro de la función');
+        //console.log('dentro de la función');
 
         const xhttp = new XMLHttpRequest();
 
@@ -41,9 +41,13 @@ $(document).ready(function() {
 
         xhttp.onreadystatechange = function(){
             if (this.readyState == 4 && this.status == 200) {
-                console.log(this.responseText);
+                //console.log(this.responseText);
                 let datos = JSON.parse(this.responseText);
-                console.log(datos);
+                //console.log(datos);
+                
+                for(let item of datos){
+                    createItem(item.nameProject, item.nameClient, item.dataCategory, item.urlImage, item.sourceImage);
+                }
             }
         }
     }
@@ -62,12 +66,42 @@ $(document).ready(function() {
             $('.container-item-gallery').fadeIn();
            } else {
                 $('.container-item-gallery').fadeOut();
-                $('.container-item-gallery[data-category='+ $category +']').fadeIn();
+                $categoriaItem = $('.container-item-gallery').data('category');
+
+                $('.container-item-gallery[data-category*='+ $category +']').fadeIn();
            }
        });
     }
 
-
-
     filterCategory();
+
+    //Owl Carousel
+
+    $('.owl-carousel').owlCarousel({
+        
+        autoplay: true,
+        autoplayTimeout: 3000,
+        slideTransition: 'linear',
+        loop: true,
+        responsive:{
+            0:{
+                items: 1
+            },
+
+            480:{
+                items: 6
+            },
+
+            768:{
+                items: 8
+            }
+        }
+    });
+
+    //SmoothScroll
+
+    $('html').smoothScroll();
+
+
+    
 });

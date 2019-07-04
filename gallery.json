@@ -1,25 +1,97 @@
 [
-    {"nameProject"   : "Desarrollo sitio",
+    {"nameProject"   : "Frontend y Backend",
         "nameClient"    : "UniverCity",
-        "dataCategory"  : "web-design",
+        "dataCategory"  : ["web-developer","web-design"],
         "typeGallery"   : "typeUrl",
-        "urlImage"      : "img/pc-mockup.jpg",
+        "urlImage"      : "mockup-univercity.jpg",
         "sourceImage"   : "https://univercity.com.co/"
         },
 
-    {"nameProject"   : "Desarrollo sitio",
-        "nameClient"    : "UniverCity",
-        "dataCategory"  : "web-design",
+    {"nameProject"   : "Web Informativa",
+        "nameClient"    : "Sti Synergy",
+        "dataCategory"  : ["wordpress","web-design"],
         "typeGallery"   : "typeUrl",
-        "urlImage"      : "img/pc-mockup.jpg",
-        "sourceImage"   : "https://univercity.com.co/"
+        "urlImage"      : "mockup-synergy.jpg",
+        "sourceImage"   : "http://univercity.com.co/demo/sti_synergy/"
         },
 
-    {"nameProject"   : "Desarrollo sitio",
-        "nameClient"    : "UniverCity",
-        "dataCategory"  : "web-design",
+    {"nameProject"   : "Web Catálogo",
+        "nameClient"    : "Tech Tra",
+        "dataCategory"  : "wordpress",
         "typeGallery"   : "typeUrl",
-        "urlImage"      : "img/pc-mockup.jpg",
-        "sourceImage"   : "https://univercity.com.co/"
-        },   
+        "urlImage"      : "mockup-tech-tra.jpg",
+        "sourceImage"   : "https://www.techtraltda.com/"
+        },
+
+    {"nameProject"   : "Web E-commerce",
+        "nameClient"    : "Fit Shaper",
+        "dataCategory"  : "wordpress",
+        "typeGallery"   : "typeUrl",
+        "urlImage"      : "mockup-fitshaper.jpg",
+        "sourceImage"   : "https://fajasfitshaper.com/"
+        },
+    
+    {"nameProject"   : "Wordpress",
+        "nameClient"    : "Zona Wirelles",
+        "dataCategory"  : "wordpress",
+        "typeGallery"   : "typeUrl",
+        "urlImage"      : "mockup-zona-wireless.jpg",
+        "sourceImage"   : "https://zona-wireless.com/"
+        },
+    
+    {"nameProject"   : "Frontend",
+        "nameClient"    : "Coopfutura",
+        "dataCategory"  : "web-developer",
+        "typeGallery"   : "typeUrl",
+        "urlImage"      : "mockup-coopfutura.jpg",
+        "sourceImage"   : "http://coopfuturagt.com/"
+        },
+
+    {"nameProject"   : "Web Informativa",
+        "nameClient"    : "Kamo Eventos",
+        "dataCategory"  : ["web-developer","web-design"],
+        "typeGallery"   : "typeUrl",
+        "urlImage"      : "mockup-kamo.jpg",
+        "sourceImage"   : "http://kamoeventos.com/"
+        },
+
+    {"nameProject"   : "Web Informativa",
+        "nameClient"    : "Nebococina",
+        "dataCategory"  : "wordpress",
+        "typeGallery"   : "typeUrl",
+        "urlImage"      : "mockup-nebococina.jpg",
+        "sourceImage"   : "https://nebococina.com/"
+        },
+    
+    {"nameProject"   : "Web Magazine",
+        "nameClient"    : "Ultravioleta",
+        "dataCategory"  : "wordpress",
+        "typeGallery"   : "typeUrl",
+        "urlImage"      : "mockup-ultravioleta.jpg",
+        "sourceImage"   : "https://ultravioleta.co/"
+        },
+    
+    {"nameProject"   : "Landing Page",
+        "nameClient"    : "Dimenor",
+        "dataCategory"  : "wordpress",
+        "typeGallery"   : "typeUrl",
+        "urlImage"      : "mockup-torneo-dimenor.jpg",
+        "sourceImage"   : "https://torneodimenor.com/"
+        },
+    
+    {"nameProject"   : "Landing Page",
+        "nameClient"    : "Dego Club",
+        "dataCategory"  : ["web-developer", "web-design"],
+        "typeGallery"   : "typeUrl",
+        "urlImage"      : "mockup-dego.jpg",
+        "sourceImage"   : "http://degoclub.com/"
+        },
+
+    {"nameProject"   : "Rediseño UX/UI",
+        "nameClient"    : "Ilebano",
+        "dataCategory"  : ["wordpress", "web-design"],
+        "typeGallery"   : "typeUrl",
+        "urlImage"      : "mockup-ilebano.jpg",
+        "sourceImage"   : "https://ilebano.com/"
+        }
 ]

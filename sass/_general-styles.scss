@@ -47,8 +47,13 @@ button{
     letter-spacing: 1px;
 }
 
+form label{
+    color: #959595;
+}
+
 .form-control{
     border: none;
     border-bottom: 1px solid #959595;
     border-radius: 0;
+    margin-bottom: 1.5rem;
 }

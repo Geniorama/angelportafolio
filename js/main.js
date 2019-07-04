@@ -1,5 +1,11 @@
 
 $(document).ready(function() {
+
+    //Header
+    $('.toggle-button').click(function() {
+        $('.nav-header').slideToggle();
+    })
+
     function wSkills() {
 
         $('.skill .bar-skill .percent-skill').each(function() {

@@ -16,13 +16,23 @@
     <div class="container-header position-relative">
         <header class="header">
             <div class="container">
-                <div class="row justify-content-between">
-                    <div class="col-6 col-md-3">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-8 col-md-3 order-1 order-md-1">
                         <div class="brand-container">
-                            <h2>Angel Burgos</h2>
+                            <a href="#"><h2>Angel Burgos</h2></a>
                         </div>
                     </div>
-                    <div class="col-6 col-md-1">
+                    <div class="col-12 col-md-8 order-3 order-md-2">
+                        <nav class="nav-header">
+                            <ul class="nav justify-content-end">
+                                <li class="nav-item"><a href="#" class="nav-link">Inicio</a></li>
+                                <li class="nav-item"><a href="#habilidades" class="nav-link">Habilidades</a></li>
+                                <li class="nav-item"><a href="#mi-portafolio" class="nav-link">Mi portafolio</a></li>
+                                <li class="nav-item"><a href="#contactame" class="nav-link">Contáctame</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-2 col-md-1 order-2 order-md-3">
                         <div class="toggle-button">
                             <div class="line"></div>
                             <div class="line"></div>
@@ -132,7 +142,7 @@
         </div>
     </section>
 
-    <section class="section gray diagonal">
+    <section class="section gray diagonal" id="mi-portafolio">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -161,9 +171,9 @@
         </div>
     </section>
 
-    <section class="section">
+    <section class="section" id="contactame">
         <div class="container">
-            <div class="row">
+            <div class="row justify-content-center align-items-end">
                 <div class="col-12">
                     <div class="box-title mb-5">
                         <h2 class="title text-center">Contáctame</h2>
@@ -171,27 +181,31 @@
                         <hr class="line-title text-center md">
                     </div>
                 </div>
-                <div class="col-12 col-md-8">
+                <div class="col-12 col-md-7">
                     <form action="">
                         <div class="row">
                             <div class="col-12 col-md-6">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Nombre*" required>
+                                    <label for="nombre">Nombre</label>
+                                    <input type="text" id="nombre" class="form-control" required>
                                 </div>
                             </div>
                             <div class="col-12 col-md-6">
                                 <div class="form-group">
-                                    <input type="tel" class="form-control" placeholder="Télefono">
+                                    <label for="telefono">Teléfono</label>
+                                    <input type="tel" id="telefono" class="form-control">
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-group">
-                                    <input type="email" class="form-control" placeholder="Correo*" required>
+                                    <label for="correo">Correo</label>
+                                    <input type="email" id="correo" class="form-control" required>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-group">
-                                    <textarea class="form-control" placeholder="Mensaje"></textarea>
+                                    <label for="mensaje">Mensaje</label>
+                                    <textarea id="mensaje" class="form-control"></textarea>
                                 </div>
                             </div>
                             <div class="col-12">
@@ -201,7 +215,8 @@
                     </form>
                 </div>
 
-                <div class="col-12 col-md-4">
+                <div class="col-12 col-md-5">
+                    <img src="img/contact.jpg" alt="" class="img-fluid">
                     <ul class="nav flex-column info-contact">
                             <li class="nav-item"><a href="#" class="nav-link"><i class="fab fa-whatsapp"></i> (+57) 3102627655</a></li>
                             <li class="nav-item"><a href="#" class="nav-link"><i class="far fa-paper-plane"></i> angelpublicista.1@gmail.com</a></li>
@@ -217,6 +232,19 @@
             </div>
         </div>
     </section>
+    <footer class="footer p-4">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-4">
+                    <h3>Angel Burgos</h3>
+                    <p>Diseñador y Desarrollador web</p>
+                </div>
+                <div class="col-12 col-md-4">
+                    <p>Copyright 2019 | Todos los derechos reservados</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

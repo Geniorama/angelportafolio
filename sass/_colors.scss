@@ -104,4 +104,12 @@ $opacity-color: rgba(84, 53, 232, .8);
 .footer{
     background-color: $secondary-color;
     color: #fff;
+    p{
+        color: #ccc;
+        font-size: .9rem;
+    }
+
+    h3{
+        font-size: 1.3rem;
+    }
 }
